@@ -2,17 +2,15 @@ package repetition_for;
 
 import java.util.Scanner;
 
-public class Exam02 {
+public class Exam03 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
-		for(int i=1; i<=num; i++) {
-			int firNum = sc.nextInt();
-			int secNum = sc.nextInt();
-			System.out.println(firNum+secNum);
+		
+		int sum = 0;
+		for (int i = 1; i <= num; i++) {
+			sum += i;
 		}
-		sc.close();
+		System.out.println(sum);
 	}
-
 }
-
